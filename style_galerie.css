@@ -15,11 +15,12 @@ header{
     left: 0;
     right: 0;
     display: flex;
-    background: linear-gradient(90deg, rgb(0, 0 , 0), rgb(83 , 83 , 83));
+    background-color: black;
     height: 71px;
     justify-content: space-between;
     padding-left: 150px;
     padding-right: 150px;
+    border-bottom: solid rgb(34, 34, 34) 1px;
 }
 #Titre_header{
     color: white;
@@ -80,6 +81,7 @@ header{
     transition: 0.3s;
     width: 50%;
 }
+
 /*----------*/
 /*   main   */
 /*----------*/
@@ -179,11 +181,12 @@ footer{
     left: 0;
     right: 0;
     display: flex;
-    background: linear-gradient(270deg, rgb(0, 0 , 0), rgb(83 , 83 , 83));
+    background-color: black;
     height: 70px;
     justify-content: space-between;
     padding-left: 150px;
     padding-right: 150px;
+    border-top: solid rgb(34, 34, 34) 1px;
 }
 #box_footer_gauche{
     display: flex;

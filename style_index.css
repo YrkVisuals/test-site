@@ -1,5 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0px;
+    background-color: black;
 }
 /*------------*/
 /*   header   */
@@ -11,11 +15,12 @@ header{
     left: 0;
     right: 0;
     display: flex;
-    background: linear-gradient(90deg, rgb(0, 0 , 0), rgb(83 , 83 , 83));
+    background-color: black;
     height: 71px;
     justify-content: space-between;
     padding-left: 150px;
     padding-right: 150px;
+    border-bottom: solid rgb(34, 34, 34) 1px;
 }
 #Titre_header{
     color: white;
@@ -77,126 +82,153 @@ header{
     width: 50%;
 }
 
-/*------------------*/
-/*   premier bloc   */
-/*------------------*/
+/*----------*/
+/*   main   */
+/*----------*/
+
+/*-----------------*/
+/*   premierbloc   */
+/*-----------------*/
 
 #premierbloc{
-    background-image:
-    linear-gradient(to bottom, transparent 80%, black 100%),
-    linear-gradient(to right, rgba(0, 0, 0, 0.75) 0%, transparent 100%),
-    url("svj_divonne.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 95vh;
+    height: 805px;
+    width: 100%;
+    margin-top: 71px;
     display: flex;
     flex-direction: column;
+    padding-left: 200px;
+    border-bottom: 1px solid rgb(34, 34, 34);
     justify-content: center;
+    padding-bottom: 35px;
 }
-#text_premierbloc{
-    margin-left: 90px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    letter-spacing: 10px;
-    gap: 5px;
-}
-#text_yourCar_premierbloc{
-    font-size: 90px;
-    font-weight: 900;
+#hero_eyebrow{
     color: white;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 5px;
+    margin-top: 100px;
 }
-#text_yourStory_premierbloc{
-    font-size: 90px;
-    font-weight: 900;
-    color: rgb(119, 119, 119);
-}
-#bouton_premierbloc_shootings{
-    width: 200px;
-    height: 54px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: larger;
-    background-color: white;
-    border: transparent;
-    transition: 0.3s;
-}
-#bouton_premierbloc_shootings:hover{
-    transform: scale(1.1);
-    background-color: transparent;
-    border: solid white;
+#hero{
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 150px;
+    margin: 0%;
+    line-height: 0.9;
 }
-#bouton_premierbloc_galerie{
-    width: 200px;
-    height: 54px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: larger;
-    background-color: white;
-    border: transparent;
-    transition: 0.3s;
+#hero_span{
+    color: #777;
 }
-#bouton_premierbloc_galerie:hover{
-    transform: scale(1.1);
-    background-color: transparent;
-    border: solid white;
-    color: white;
+#hero_description{
+    color: #777;
+    font-family: Montserrat, sans-serif;
 }
-#bouton_premierbloc{
-    display: flex;
-    gap: 30px;
-    margin-left: 90px;
-}
-
-/*--------------------*/
-/*   deuxieme bloc   */
-/*--------------------*/
-
-#deuxiemebloc{
-    background: linear-gradient(to left, rgb(0, 0, 0) 0%, transparent 100%);
-    height: 95vh;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    background:
-    linear-gradient(to top, transparent 80%, black 100%),
-}
-#eyebrowText_deuxiemebloc{
+#boutons_premierbloc{
+    width: 1247px;
     font-family: montserrat, sans-serif;
-    font-size: 12px;
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center  ;
+    color: white;
+    margin-top: 60px;
 }
-#titre_deuxiemebloc{
-    text-transform: uppercase;
-    text-align: center;
-    font-family: Montserrat ,sans-serif;
+#bouton_galerie{
+    padding: 16px 35px;
+    background-color: white;
+    border: solid white 1px;
+    color: black;
+    text-decoration: none;
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;    
+    color: black;
+    transition: 0.3s;
+}
+#bouton_galerie:hover{
+    background-color: transparent;
+    color: white;
+}
+#bouton_tarifs{
+    padding: 16px 35px;
+    border: solid white 1px;
+    margin-left: 50px;
+    text-decoration: none;
+    font-family: montserrat, sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+    transition: 0.3s;
+}
+#bouton_tarifs:hover{
+    background-color: white;
+    color: black;
+}
+#deuxiemebloc{
+    width: 100%;
+    height: 810px;
+    background-color: black;
+    display: flex;
+    margin-bottom: 75px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+}
+#deuxiemebloc_gauche{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 900px;
+    background-color: black;
+    justify-content: center;
+}
+#deuxiemebloc_gauche h6{
+    margin: 0%;
+    color: #777;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+#deuxiemebloc_gauche h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 100px;
+    margin: 0%;
+    margin-top: 40px;
+    line-height: 0.95;
 }
-#bouton_deuxiemebloc_galerie{
-    align-self: center;
-    text-align: center;
-    font-family: Montserrat, sans-serif;
-    font-style: 12px;
-    font-weight: 600;
-    letter-spacing: 8px;
+#deuxiemebloc_gauche span{
+    color: #777;
+}
+#deuxiemebloc_droite{
+    height: 600px;
+    width: 600px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+#deuxiemebloc_droite p{
+    color: #777;
+}
+#deuxiemebloc_droite a{
     color: white;
     text-decoration: none;
-    border-bottom: solid white 2px;
-    width: 250px;
-    padding-bottom: 10px;
-    transition: 0.3s;
-}
-#bouton_deuxiemebloc_galerie:hover{
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
     width: 300px;
-    transform: scale(1.05);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: 0.6s;
 }
-
+#deuxiemebloc_droite a:hover{
+    width: 400px;
+}
 /*-----------*/
 /*   footer   */
 /*-----------*/
@@ -207,11 +239,12 @@ footer{
     left: 0;
     right: 0;
     display: flex;
-    background: linear-gradient(270deg, rgb(0, 0 , 0), rgb(83 , 83 , 83));
+    background-color: black;
     height: 70px;
     justify-content: space-between;
     padding-left: 150px;
     padding-right: 150px;
+    border-top: solid rgb(34, 34, 34) 1px;
 }
 #box_footer_gauche{
     display: flex;
