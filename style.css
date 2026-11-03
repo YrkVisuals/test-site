@@ -1,0 +1,575 @@
+﻿* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #000;
+}
+
+/* Header commun */
+header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    height: 71px;
+    border-bottom: 73px solid rgb(34, 34, 34);
+}
+#box_header_gauche, #box_header_droite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 71px;
+    background: #000;
+}
+#box_header_gauche a {
+    margin: 0;
+    color: #fff;
+    font: 900 22px Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    text-decoration: none;
+    transition: .3s;
+}
+#box_header_gauche a:hover {
+    transform: scale(1.01);
+    letter-spacing: 15px;
+}
+#box_header_gauche span {
+    color: #777;
+}
+#box_header_droite {
+    gap: 10px;
+}
+#box_header_droite div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    font: 900 15px Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#box_header_droite a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+#box_header_droite a:hover {
+    color: rgba(255,255,255,.5);
+    transform: scale(1.01);
+    letter-spacing: 5px;
+}
+#box_header_langue {
+    border: 1px solid #fff;
+    transition: .3s;
+}
+#box_header_langue:hover {
+    color: #000;
+    background: #fff;
+}
+
+/* index.html */
+body:has(#hero) #premierbloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 805px;
+    margin-top: 71px;
+    padding-bottom: 35px;
+    padding-left: 200px;
+    border-bottom: 1px solid rgb(34,34,34);
+}
+#hero_eyebrow {
+    margin-top: 100px;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 5px;
+}
+#hero {
+    margin: 0;
+    color: #fff;
+    font: 800 150px/.9 Arial, Helvetica, sans-serif;
+}
+#hero_span, body:has(#hero) #deuxiemebloc_gauche span, body:has(#hero) #troisiemebloc span {
+    color: #777;
+}
+#hero_description {
+    color: #777;
+    font-family: Montserrat, sans-serif;
+}
+#boutons_premierbloc {
+    width: 1247px;
+    margin-top: 60px;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+}
+#bouton_galerie, #bouton_tarifs {
+    padding: 16px 35px;
+    border: 1px solid #fff;
+    font: 900 16px Montserrat, sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: .3s;
+}
+#bouton_galerie {
+    color: #000;
+    background: #fff;
+}
+#bouton_galerie:hover {
+    color: #fff;
+    background: transparent;
+}
+#bouton_tarifs {
+    margin-left: 50px;
+    color: #fff;
+}
+#bouton_tarifs:hover {
+    color: #000;
+    background: #fff;
+}
+body:has(#hero) #deuxiemebloc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    width: 100%;
+    height: 810px;
+    border-bottom: 1px solid rgb(34,34,34);
+}
+body:has(#hero) #deuxiemebloc_gauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    height: 600px;
+}
+body:has(#hero) #deuxiemebloc_gauche h6 {
+    margin: 0;
+    color: #777;
+    font: 800 12px Montserrat, sans-serif;
+    letter-spacing: 8px;
+}
+body:has(#hero) #deuxiemebloc_gauche h1 {
+    margin: 40px 0 0;
+    color: #fff;
+    font: 900 100px/.95 Arial, Helvetica, sans-serif;
+}
+body:has(#hero) #deuxiemebloc_droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    font: 16px/1.8 Arial, Helvetica, sans-serif;
+}
+body:has(#hero) #deuxiemebloc_droite p {
+    color: #777;
+}
+body:has(#hero) #deuxiemebloc_droite a {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font: 700 12px Montserrat, sans-serif;
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+body:has(#hero) #deuxiemebloc_droite a:hover {
+    width: 400px;
+}
+body:has(#hero) #troisiemebloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 70px;
+    color: #fff;
+    text-align: center;
+}
+#troisiemebloc_eyebrow {
+    margin: 0;
+    color: #777;
+    font: 800 20px Montserrat, sans-serif;
+    letter-spacing: 8px;
+}
+#troisiemebloc_titre {
+    color: #fff;
+    font: 900 110px/.95 Arial, Helvetica, sans-serif;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+}
+#troisiemebloc_bouton {
+    padding: 16px 45px;
+    border: 1px solid #fff;
+    color: #000;
+    background: #fff;
+    font: 900 16px Arial, Helvetica, sans-serif;
+    letter-spacing: 4px;
+    text-decoration: none;
+    transition: .3s;
+}
+#troisiemebloc_bouton:hover {
+    color: #fff;
+    background: #000;
+    letter-spacing: 6px;
+    transform: scale(1.1);
+}
+
+/* Contact */
+body:has(#contact) main {
+    width: 100%;
+    height: 1000px;
+}
+body:has(#contact) #premierbloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    margin-top: 71px;
+    text-align: center;
+}
+#eyebrow, #description {
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#titre {
+    margin: 0;
+    color: #fff;
+    font: bold 105px/.9 Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+#titre span {
+    color: #777;
+}
+body:has(#contact) #deuxiemebloc {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+#contact, #form {
+    width: 50%;
+    height: 500px;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    padding-left: 350px;
+}
+#contact h1 {
+    color: #fff;
+    font: bold 40px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+#contact p {
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contact h3 {
+    color: #fff;
+    font: 900 19px Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+#contact a {
+    color: #777;
+    font: 600 16px Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    transition: .1s;
+}
+#contact a:hover {
+    color: #444;
+}
+
+/* galerie.html */
+body:has(#titre_portfolio) #premierbloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 71px;
+    border-bottom: 1px solid rgb(34,34,34);
+}
+#titre_portfolio {
+    display: flex;
+    justify-content: center;
+    width: 125px;
+    margin: 0 0 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255,255,255,.356);
+    color: rgba(255,255,255,.623);
+    font: 15px Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+#titre_realisations {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: #fff;
+    font: 150px Montserrat, sans-serif;
+    text-align: center;
+}
+#titre_realisations_span, #quatriemebloc span {
+    color: #777;
+}
+#selection {
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body:has(#titre_portfolio) #deuxiemebloc {
+    width: 100%;
+    height: 600px;
+}
+body:has(#titre_portfolio) #troisiemebloc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 1000px;
+    border-top: 1px solid rgb(34,34,34);
+}
+#bloc1, #bloc2, #bloc3, #bloc4 {
+    width: 450px;
+    height: 450px;
+    background: #e1306c;
+}
+#quatriemebloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 417px;
+    margin-bottom: 70px;
+    border-top: 1px solid rgb(34,34,34);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+#quatriemebloc h1 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+}
+#quatriemebloc a {
+    padding: 16px 27px;
+    border: 1px solid #fff;
+    color: #000;
+    background: #fff;
+    font: 900 11px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: .3s;
+}
+#quatriemebloc a:hover {
+    color: #fff;
+    background: #000;
+}
+
+/* tarifs.html */
+body:has(#tarif_1) main {
+    margin-top: 55px;
+}
+body:has(#tarif_1) #premierbloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    color: #fff;
+}
+#text_prestation_premierbloc {
+    margin-top: 75px;
+    color: #777;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 3px;
+}
+#text_tarifs_premierbloc {
+    margin: 0;
+    font: 105px Arial, Helvetica, sans-serif;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+body:has(#tarif_1) #deuxiemebloc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 900px;
+    padding-top: 40px;
+    border-top: 1px solid rgb(34,34,34);
+    border-bottom: 1px solid rgb(34,34,34);
+}
+#tarif_1, #tarif_3 {
+    width: 370px;
+    height: 636px;
+    border: 1px solid rgb(50,50,50);
+}
+#tarif_2 {
+    width: 381px;
+    height: 655px;
+    border: 1px solid rgba(255,255,255,.5);
+}
+#tarif_1, #tarif_2, #tarif_3 {
+    padding: 45px 35px;
+    background: #0d0d0d;
+    transition: .3s;
+}
+#tarif_1:hover, #tarif_3:hover {
+    border-color: rgb(100,100,100);
+}
+#tarif_2:hover {
+    border-color: #fff;
+}
+#tarif1_eyebrow, #tarif2_eyebrow, #tarif3_eyebrow {
+    margin-top: 30px;
+    color: #777;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+#tarif1_prix, #tarif2_prix, #tarif3_prix {
+    color: #fff;
+    font: bold 65px Arial, Helvetica, sans-serif;
+}
+#tarif1_description, #tarif2_description, #tarif3_description {
+    color: #777;
+    font: 400 16px Montserrat, sans-serif;
+}
+#tarif1_liste {
+    width: 298px;
+    height: 205px;
+    margin-bottom: 30px;
+}
+#tarif1_redirection, #tarif2_redirection, #tarif3_redirection {
+    padding: 16px 27px;
+    border: 1px solid #fff;
+    color: #000;
+    background: #fff;
+    font: 900 11px Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+#tarif1_redirection:hover, #tarif2_redirection:hover, #tarif3_redirection:hover {
+    color: #fff;
+    background: transparent;
+}
+body:has(#tarif_1) #troisiemebloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 700px;
+    color: #fff;
+}
+#projet {
+    margin: 0;
+    color: #fff;
+    font: 600 70px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+#sur_mesure {
+    color: #777;
+}
+body:has(#tarif_1) #troisiemebloc p {
+    display: flex;
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#lien_devis {
+    margin-top: 30px;
+    padding: 15px 45px;
+    border: 1px solid #fff;
+    color: #000;
+    background: #fff;
+    font: 900 15px Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+#lien_devis:hover {
+    color: #fff;
+    background: transparent;
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 150px;
+    background: #000;
+    border-top: 1px solid rgb(34,34,34);
+}
+#box_footer_gauche, #box_footer_millieu, #box_footer_droite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box_footer_gauche {
+    font-family: Montserrat, sans-serif;
+}
+#text_footer_reseaux {
+    color: #fff;
+    font-size: small;
+    font-weight: 800;
+    letter-spacing: 15px;
+}
+#bouton_footer_insta, #bouton_footer_tiktok {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    transition: .3s;
+}
+#bouton_footer_insta {
+    background-image: url(images/logo_insta.png);
+}
+#bouton_footer_tiktok {
+    background-image: url(images/logo_tiktok.jpg);
+}
+#bouton_footer_insta:hover {
+    box-shadow: 0 0 25px #e1306c;
+    transform: scale(1.3);
+}
+#bouton_footer_tiktok:hover {
+    box-shadow: 0 0 25px #5fbde2;
+    transform: scale(1.3);
+}
+#text_footer_millieu, #text_footer_droite {
+    color: #fff;
+    font: medium Montserrat, sans-serif;
+    letter-spacing: 5px;
+}
