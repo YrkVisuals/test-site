@@ -152,19 +152,79 @@ main{
        font-size: 65px;
 }
 #tarif1_description{
-    color: white;
+    color: #777;
     font-family: "Montserrat", sans-serif;
     font-weight: 400
+}
+#tarif1_liste{
+   width: 298px;
+   height: 205px;
+   margin-bottom: 30px;
+}
+#tarif1_redirection{
+    padding: 16px 27px;
+    border: solid white 1px;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#tarif1_redirection:hover{
+    background-color: transparent;
+    color: white;
 }
 #tarif_2{
     width: 381px;
     height: 655px;
+    padding: 45px 35px;
     background-color: #0d0d0d;
     border: solid rgba(255, 255, 255, 0.5) 1px;
     transition: 0.3s;
 }
 #tarif_2:hover{
     border: solid white 1px;
+}
+#tarif2_eyebrow{
+    color: #777;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+#tarif2_prix{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 65px;   
+}
+#tarif2_description{
+    color: #777;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400
+}
+#tarif2_redirection{
+    padding: 16px 27px;
+    border: solid white 1px;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#tarif2_redirection:hover{
+    background-color: transparent;
+    color: white;
 }
 #tarif_3{
     width: 370px;
@@ -176,6 +236,43 @@ main{
 }
 #tarif_3:hover{
     border: solid rgb(100, 100, 100) 1px;
+}
+#tarif3_eyebrow{
+    color: #777;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+#tarif3_prix{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 65px;   
+}
+#tarif3_description{
+    color: #777;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400
+}
+#tarif3_redirection{
+    padding: 16px 27px;
+    border: solid white 1px;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+#tarif3_redirection:hover{
+    background-color: transparent;
+    color: white;
 }
 #troisiemebloc{
     width: 100%;
