@@ -74,6 +74,21 @@ header {
     background: #fff;
 }
 
+/*
+@keyframes menu_langue{
+    0%{
+        background-color: red;
+    }
+    100%{
+        background-color: blue;
+    }
+}
+#box_header_langue:hover{
+    animation: menu_langue 1s;
+}
+*/
+
+
 /* index.html */
 body:has(#hero) #premierbloc {
     display: flex;
